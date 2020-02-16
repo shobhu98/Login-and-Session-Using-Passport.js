@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Login</h1>
+<% if (messages.error) { %>
+    <%= messages.error %>
+<% } %>
+<form action="/login" method="post">
+    <div>
+
+        <div>
+            <label>Email</label>
+            <input type="email" id="email" name="email" required >
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input type="password" id="password" name="password" required >
+        </div>
+
+
+
+        <button>submit</button>
+    </div>
+</form>
+<a href="/register">Register</a>
+</body>
+</html>
